@@ -32,7 +32,10 @@ const EmblaCarouse:React.FC = () => {
         <img className=' rounded-md '
          src='https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/96e5f906-4490-4224-866f-c0f5c5a94fe5.png'/>
         </div>
-       
+       <div className='embla__slide'>
+        <img className='rounded-md'
+        src='https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/d56ab6a8-5663-4598-9224-7b2cf2e63c5d.png'/>
+       </div>
       </div>
   
     </div>
