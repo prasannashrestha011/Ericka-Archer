@@ -1,22 +1,13 @@
 import React from 'react'
 import { sourceCodeData } from '@/app/data/Data';
-
+import { Spinner } from '@nextui-org/spinner';
+import SnippetItem from './SnippetItem';
 const Snippets:React.FC = () => {
   return (
     <div className='w-4/5' >
-      <ul>
-        {sourceCodeData.map((data,idx)=>(
-          <li key={idx} className='flex flex-col justify-center items-center text-slate-100 lg:w-11/12 mx-auto p-2 lg:p-0' >
-            <div className='font-bold lg:text-xl'>{data.title}</div>
-            <div className='lg:w-6/12'>
-              <img src={data.snippetImg}  draggable="false"/>
-            </div>
-            <div className='font-semibold lg:w-9/12 lg:text-medium pb-4 text-slate-100 text-sm'>
-            {data.description}
-            </div>
-          </li>
-        ))}
-      </ul>
+     <SnippetItem
+     sourceCodeData={sourceCodeData}
+     />
      
     </div>
   )

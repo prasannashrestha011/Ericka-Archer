@@ -9,15 +9,20 @@ const NavBar = () => {
           </NavbarBrand>
         
             <NavbarContent className=" flex-1 items-center justify-center   w-full ">
+
                <div className='flex-1'>
-               <NavbarItem className="  text-center">
-                <Link href='/' className='text-slate-100'><span className="text-xl font-bold">Vendetta</span></Link>
-                </NavbarItem>
+                <NavbarItem className="  text-center">
+                   <Link href='/' className='text-slate-100'><span className="text-xl font-bold">Vendetta</span></Link>
+                  </NavbarItem>
                </div>
-                <div>
-                <NavbarItem className='w-20'>
-                  <Link href="#"><span className='font-bold text-large'>About</span></Link>
-                </NavbarItem>
+
+                <div className='flex justify-center items-center font-bold text-large'>
+                  <NavbarItem className='w-20'>
+                    <Link href="#"><span className=''>About</span></Link>
+                  </NavbarItem>
+                  <NavbarItem className=''>
+                    <Link href='/source-code'><span>Source Code</span></Link>
+                  </NavbarItem>
                 </div>
             </NavbarContent>
            
