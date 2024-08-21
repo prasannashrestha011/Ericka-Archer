@@ -7,11 +7,11 @@ const Snippets:React.FC = () => {
       <ul>
         {sourceCodeData.map((data,idx)=>(
           <li key={idx} className='flex flex-col justify-center items-center text-slate-100 lg:w-11/12 mx-auto p-2 lg:p-0' >
-            <div className='font-bold text-xl'>{data.title}</div>
+            <div className='font-bold lg:text-xl'>{data.title}</div>
             <div className='lg:w-6/12'>
-              <img src={data.snippetImg} className=' '/>
+              <img src={data.snippetImg}  draggable="false"/>
             </div>
-            <div className='font-semibold lg:w-9/12 lg:text-medium pb-4 text-slate-700'>
+            <div className='font-semibold lg:w-9/12 lg:text-medium pb-4 text-slate-100 text-sm'>
             {data.description}
             </div>
           </li>

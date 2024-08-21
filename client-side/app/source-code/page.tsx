@@ -4,7 +4,7 @@ import Snippets from '../component/SourceCodeCmps/Snippets'
 const SourceCode = () => {
   return (
     <div
-    className=''
+    className=' h-full bg-gray-900'
     >
      
       <div className='
